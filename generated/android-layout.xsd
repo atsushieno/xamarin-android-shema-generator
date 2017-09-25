@@ -1,0 +1,607 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Spinner" type="Spinner_Type" />
+  <xs:complexType name="Spinner_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="AbsSpinner_Type">
+        <xs:attributeGroup ref="android:Spinner" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AbsSpinner" type="AbsSpinner_Type" />
+  <xs:complexType name="AbsSpinner_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="AdapterView_Type">
+        <xs:attributeGroup ref="android:AbsSpinner" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AdapterView" type="AdapterView_Type" />
+  <xs:complexType name="AdapterView_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup_Type" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ViewGroup" type="ViewGroup_Type" />
+  <xs:complexType name="ViewGroup_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="View_Type">
+        <xs:attributeGroup ref="android:ViewGroup" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="View" type="View_Type" />
+  <xs:complexType name="View_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="xs:anyType">
+        <xs:attributeGroup ref="android:View" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Gallery" type="Gallery_Type" />
+  <xs:complexType name="Gallery_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="AbsSpinner_Type">
+        <xs:attributeGroup ref="android:Gallery" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ImageView" type="ImageView_Type" />
+  <xs:complexType name="ImageView_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="View_Type">
+        <xs:attributeGroup ref="android:ImageView" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DatePicker" type="DatePicker_Type" />
+  <xs:complexType name="DatePicker_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout_Type">
+        <xs:attributeGroup ref="android:DatePicker" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FrameLayout" type="FrameLayout_Type" />
+  <xs:complexType name="FrameLayout_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup_Type">
+        <xs:attributeGroup ref="android:FrameLayout" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ViewStub" type="ViewStub_Type" />
+  <xs:complexType name="ViewStub_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="View_Type">
+        <xs:attributeGroup ref="android:ViewStub" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ZoomControls" type="ZoomControls_Type" />
+  <xs:complexType name="ZoomControls_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="LinearLayout_Type" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LinearLayout" type="LinearLayout_Type" />
+  <xs:complexType name="LinearLayout_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup_Type">
+        <xs:attributeGroup ref="android:LinearLayout" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AnalogClock" type="AnalogClock_Type" />
+  <xs:complexType name="AnalogClock_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="View_Type">
+        <xs:attributeGroup ref="android:AnalogClock" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ImageButton" type="ImageButton_Type" />
+  <xs:complexType name="ImageButton_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ImageView_Type" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TimePicker" type="TimePicker_Type" />
+  <xs:complexType name="TimePicker_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout_Type">
+        <xs:attributeGroup ref="android:TimePicker" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CheckBox" type="CheckBox_Type" />
+  <xs:complexType name="CheckBox_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="CompoundButton_Type" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CompoundButton" type="CompoundButton_Type" />
+  <xs:complexType name="CompoundButton_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="Button_Type">
+        <xs:attributeGroup ref="android:CompoundButton" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Button" type="Button_Type" />
+  <xs:complexType name="Button_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="TextView_Type">
+        <xs:attributeGroup ref="android:Button" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TextView" type="TextView_Type" />
+  <xs:complexType name="TextView_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="View_Type">
+        <xs:attributeGroup ref="android:TextView" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RadioButton" type="RadioButton_Type" />
+  <xs:complexType name="RadioButton_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="CompoundButton_Type" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Space" type="Space_Type" />
+  <xs:complexType name="Space_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="View_Type" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SurfaceView" type="SurfaceView_Type" />
+  <xs:complexType name="SurfaceView_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="View_Type" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CheckedTextView" type="CheckedTextView_Type" />
+  <xs:complexType name="CheckedTextView_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="TextView_Type">
+        <xs:attributeGroup ref="android:CheckedTextView" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ZoomButton" type="ZoomButton_Type" />
+  <xs:complexType name="ZoomButton_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ImageButton_Type" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="QuickContactBadge" type="QuickContactBadge_Type" />
+  <xs:complexType name="QuickContactBadge_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ImageView_Type">
+        <xs:attributeGroup ref="android:QuickContactBadge" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SeekBar" type="SeekBar_Type" />
+  <xs:complexType name="SeekBar_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="AbsSeekBar_Type">
+        <xs:attributeGroup ref="android:SeekBar" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AbsSeekBar" type="AbsSeekBar_Type" />
+  <xs:complexType name="AbsSeekBar_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ProgressBar_Type" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProgressBar" type="ProgressBar_Type" />
+  <xs:complexType name="ProgressBar_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="View_Type">
+        <xs:attributeGroup ref="android:ProgressBar" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DigitalClock" type="DigitalClock_Type" />
+  <xs:complexType name="DigitalClock_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="TextView_Type" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="VideoView" type="VideoView_Type" />
+  <xs:complexType name="VideoView_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="SurfaceView_Type" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Chronometer" type="Chronometer_Type" />
+  <xs:complexType name="Chronometer_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="TextView_Type">
+        <xs:attributeGroup ref="android:Chronometer" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TwoLineListItem" type="TwoLineListItem_Type" />
+  <xs:complexType name="TwoLineListItem_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="RelativeLayout_Type">
+        <xs:attributeGroup ref="android:TwoLineListItem" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RelativeLayout" type="RelativeLayout_Type" />
+  <xs:complexType name="RelativeLayout_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup_Type">
+        <xs:attributeGroup ref="android:RelativeLayout" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToggleButton" type="ToggleButton_Type" />
+  <xs:complexType name="ToggleButton_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="CompoundButton_Type">
+        <xs:attributeGroup ref="android:ToggleButton" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WebView" type="WebView_Type" />
+  <xs:complexType name="WebView_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="AbsoluteLayout_Type" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AbsoluteLayout" type="AbsoluteLayout_Type" />
+  <xs:complexType name="AbsoluteLayout_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup_Type" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MultiAutoCompleteTextView" type="MultiAutoCompleteTextView_Type" />
+  <xs:complexType name="MultiAutoCompleteTextView_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="AutoCompleteTextView_Type" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AutoCompleteTextView" type="AutoCompleteTextView_Type" />
+  <xs:complexType name="AutoCompleteTextView_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="EditText_Type">
+        <xs:attributeGroup ref="android:AutoCompleteTextView" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EditText" type="EditText_Type" />
+  <xs:complexType name="EditText_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="TextView_Type">
+        <xs:attributeGroup ref="android:EditText" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="NumberPicker" type="NumberPicker_Type" />
+  <xs:complexType name="NumberPicker_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="LinearLayout_Type">
+        <xs:attributeGroup ref="android:NumberPicker" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RatingBar" type="RatingBar_Type" />
+  <xs:complexType name="RatingBar_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="AbsSeekBar_Type">
+        <xs:attributeGroup ref="android:RatingBar" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TextureView" type="TextureView_Type" />
+  <xs:complexType name="TextureView_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="View_Type" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CalendarView" type="CalendarView_Type" />
+  <xs:complexType name="CalendarView_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout_Type">
+        <xs:attributeGroup ref="android:CalendarView" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GestureOverlayView" type="GestureOverlayView_Type" />
+  <xs:complexType name="GestureOverlayView_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout_Type">
+        <xs:attributeGroup ref="android:GestureOverlayView" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TextClock" type="TextClock_Type" />
+  <xs:complexType name="TextClock_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="TextView_Type">
+        <xs:attributeGroup ref="android:TextClock" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Switch" type="Switch_Type" />
+  <xs:complexType name="Switch_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="CompoundButton_Type">
+        <xs:attributeGroup ref="android:Switch" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AbsoluteLayout.LayoutParams" type="AbsoluteLayout.LayoutParams_Type" />
+  <xs:complexType name="AbsoluteLayout.LayoutParams_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup.LayoutParams_Type" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ViewGroup.LayoutParams" type="ViewGroup.LayoutParams_Type" />
+  <xs:complexType name="ViewGroup.LayoutParams_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="xs:anyType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RadioGroup.LayoutParams" type="RadioGroup.LayoutParams_Type" />
+  <xs:complexType name="RadioGroup.LayoutParams_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="LinearLayout.LayoutParams_Type" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LinearLayout.LayoutParams" type="LinearLayout.LayoutParams_Type" />
+  <xs:complexType name="LinearLayout.LayoutParams_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="MarginLayoutParams_Type" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MarginLayoutParams" type="MarginLayoutParams_Type" />
+  <xs:complexType name="MarginLayoutParams_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup.LayoutParams_Type" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ActionMenuView.LayoutParams" type="ActionMenuView.LayoutParams_Type" />
+  <xs:complexType name="ActionMenuView.LayoutParams_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="LinearLayout.LayoutParams_Type" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TableRow.LayoutParams" type="TableRow.LayoutParams_Type" />
+  <xs:complexType name="TableRow.LayoutParams_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="LinearLayout.LayoutParams_Type" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FrameLayout.LayoutParams" type="FrameLayout.LayoutParams_Type" />
+  <xs:complexType name="FrameLayout.LayoutParams_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="MarginLayoutParams_Type" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GridLayout.LayoutParams" type="GridLayout.LayoutParams_Type" />
+  <xs:complexType name="GridLayout.LayoutParams_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="MarginLayoutParams_Type" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TableLayout.LayoutParams" type="TableLayout.LayoutParams_Type" />
+  <xs:complexType name="TableLayout.LayoutParams_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="LinearLayout.LayoutParams_Type" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RelativeLayout.LayoutParams" type="RelativeLayout.LayoutParams_Type" />
+  <xs:complexType name="RelativeLayout.LayoutParams_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="MarginLayoutParams_Type" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ScrollView" type="ScrollView_Type" />
+  <xs:complexType name="ScrollView_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout_Type">
+        <xs:attributeGroup ref="android:ScrollView" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListView" type="ListView_Type" />
+  <xs:complexType name="ListView_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="AbsListView_Type">
+        <xs:attributeGroup ref="android:ListView" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AbsListView" type="AbsListView_Type" />
+  <xs:complexType name="AbsListView_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="AdapterView_Type">
+        <xs:attributeGroup ref="android:AbsListView" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Toolbar" type="Toolbar_Type" />
+  <xs:complexType name="Toolbar_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup_Type">
+        <xs:attributeGroup ref="android:Toolbar" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GridView" type="GridView_Type" />
+  <xs:complexType name="GridView_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="AbsListView_Type">
+        <xs:attributeGroup ref="android:GridView" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ImageSwitcher" type="ImageSwitcher_Type" />
+  <xs:complexType name="ImageSwitcher_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewSwitcher_Type">
+        <xs:attributeGroup ref="android:ImageSwitcher" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ViewSwitcher" type="ViewSwitcher_Type" />
+  <xs:complexType name="ViewSwitcher_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewAnimator_Type">
+        <xs:attributeGroup ref="android:ViewSwitcher" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ViewAnimator" type="ViewAnimator_Type" />
+  <xs:complexType name="ViewAnimator_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout_Type">
+        <xs:attributeGroup ref="android:ViewAnimator" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TextSwitcher" type="TextSwitcher_Type" />
+  <xs:complexType name="TextSwitcher_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewSwitcher_Type">
+        <xs:attributeGroup ref="android:TextSwitcher" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MediaController" type="MediaController_Type" />
+  <xs:complexType name="MediaController_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout_Type" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TabWidget" type="TabWidget_Type" />
+  <xs:complexType name="TabWidget_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="LinearLayout_Type">
+        <xs:attributeGroup ref="android:TabWidget" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StackView" type="StackView_Type" />
+  <xs:complexType name="StackView_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="AdapterViewAnimator_Type">
+        <xs:attributeGroup ref="android:StackView" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AdapterViewAnimator" type="AdapterViewAnimator_Type" />
+  <xs:complexType name="AdapterViewAnimator_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="AdapterView_Type">
+        <xs:attributeGroup ref="android:AdapterViewAnimator" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DialerFilter" type="DialerFilter_Type" />
+  <xs:complexType name="DialerFilter_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="RelativeLayout_Type" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SlidingDrawer" type="SlidingDrawer_Type" />
+  <xs:complexType name="SlidingDrawer_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup_Type">
+        <xs:attributeGroup ref="android:SlidingDrawer" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GridLayout" type="GridLayout_Type" />
+  <xs:complexType name="GridLayout_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup_Type">
+        <xs:attributeGroup ref="android:GridLayout" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TabHost" type="TabHost_Type" />
+  <xs:complexType name="TabHost_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout_Type" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ExpandableListView" type="ExpandableListView_Type" />
+  <xs:complexType name="ExpandableListView_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ListView_Type">
+        <xs:attributeGroup ref="android:ExpandableListView" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ActionMenuView" type="ActionMenuView_Type" />
+  <xs:complexType name="ActionMenuView_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="LinearLayout_Type" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ViewFlipper" type="ViewFlipper_Type" />
+  <xs:complexType name="ViewFlipper_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewAnimator_Type">
+        <xs:attributeGroup ref="android:ViewFlipper" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SearchView" type="SearchView_Type" />
+  <xs:complexType name="SearchView_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="LinearLayout_Type">
+        <xs:attributeGroup ref="android:SearchView" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RadioGroup" type="RadioGroup_Type" />
+  <xs:complexType name="RadioGroup_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="LinearLayout_Type">
+        <xs:attributeGroup ref="android:RadioGroup" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TableRow" type="TableRow_Type" />
+  <xs:complexType name="TableRow_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="LinearLayout_Type">
+        <xs:attributeGroup ref="android:TableRow" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AdapterViewFlipper" type="AdapterViewFlipper_Type" />
+  <xs:complexType name="AdapterViewFlipper_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="AdapterViewAnimator_Type">
+        <xs:attributeGroup ref="android:AdapterViewFlipper" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="HorizontalScrollView" type="HorizontalScrollView_Type" />
+  <xs:complexType name="HorizontalScrollView_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout_Type">
+        <xs:attributeGroup ref="android:HorizontalScrollView" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TableLayout" type="TableLayout_Type" />
+  <xs:complexType name="TableLayout_Type">
+    <xs:complexContent mixed="false">
+      <xs:extension base="LinearLayout_Type">
+        <xs:attributeGroup ref="android:TableLayout" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+</xs:schema>
